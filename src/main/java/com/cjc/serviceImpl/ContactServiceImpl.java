@@ -94,7 +94,7 @@ public class ContactServiceImpl implements ContactService {
 	public String deleteContact(Integer contactid) {
 		Contact contact = contactrepo.findById(contactid).get();
 		contact.setActivesw(false);
-		contactrepo.save(contact);
+		contactrepo.save(contact); 
 		return "Contact Deleted Successfully....";
 	}
 
